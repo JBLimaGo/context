@@ -1,5 +1,6 @@
+import React from "react";
 //  1 - Criar Contexto
-import { createContext, useState } from "react";
+import react, { createContext, useState } from "react";
 
 export const CounterContext = createContext();
 

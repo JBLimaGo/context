@@ -6,9 +6,9 @@ import reportWebVitals from "./reportWebVitals";
 
 import { CounterContextProvider } from "./context/CounterContext";
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
-    {/* Criando Provider */}
     <CounterContextProvider>
       <App />
     </CounterContextProvider>
