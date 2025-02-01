@@ -5,15 +5,19 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 import { CounterContextProvider } from "./context/CounterContext";
+import { TitleColorContextProvider } from "./context/TitleColorContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    {/* 2 - Criando Provider */}
     <CounterContextProvider>
-      <App />
+      <TitleColorContextProvider>
+        <App />
+      </TitleColorContextProvider>
     </CounterContextProvider>
   </React.StrictMode>,
-  document.getElementById("root")
+ // document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
